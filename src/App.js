@@ -7,7 +7,7 @@ import WorkExperience from "./pages/WorkExperience";
 
 function App() {
   return (
-      <Router basename="/portfolio">
+      <Router >
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />

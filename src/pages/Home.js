@@ -69,7 +69,7 @@ const Home = () => {
                     </div>
 
                     <div className="intro-text-container">
-                        <p className="intro-text2">A Software Engineer who</p>
+                        <p className="intro-text2">A Computer Scientist who</p>
                         <p className="intro-text3">
                             fixes code<br/>
                             and the&nbsp;
@@ -88,7 +88,7 @@ const Home = () => {
                 </div>
 
                 <p className="mini-paragraph">
-                    I'm currently a dedicated Computer Science student at Western University, located in London,
+                    I'm currently a dedicated student at Western University, located in London,
                     Ontario, pursuing my passion for technology and software development.
                 </p>
                 <p className="mini-paragraph2">

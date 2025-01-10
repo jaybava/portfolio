@@ -521,23 +521,43 @@ body {
         padding-top: 10px;
         animation: slideInRight 1.5s ease-in-out forwards;
     }
-    .card-background.third{
+
+    .about-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .image-stack{
         position: relative;
-        width: 540px;        /* Set appropriate width */
-        height:705px;      /* Maintain aspect ratio */
-        border-radius: 20px;
-        z-index: 1;
-        margin: 1% 0 0 -4%;
+        width: 2500px; /* Adjust to fit the desired size */
+        height: auto; /* Adjust to fit the desired size */
+        margin: 0 auto; /* Center the images horizontally */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-background.third{
+        position: absolute; /* Allow stacking */
+        left: 0;
+        width: 100%; /* Fit to the container */
+        height: 600px;
+        z-index: 1; /* Ensure it is below the PictureJay image */
         opacity: 0;
         animation: fadeIn 1.5s ease-in-out 1.5s forwards;
     }
     .jay-picture{
-        position: relative;
-        border-radius: 20px;
-        height: 665px;
-        width: auto;
-        z-index: 2;
-        transform: translate(48.5%, -2.5%);
+        position: absolute; /* Allow stacking */
+        top: 50%; /* Adjust vertical alignment */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Fine-tune alignment */
+        width: 90%; /* Adjust size of the image */
+        z-index: 2; /* Ensure it is above the Card Background */
+        border-radius: 15px; /* Make the picture circular */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for emphasis */
         opacity: 0;
         animation: fadeIn 1.5s ease-in-out 1.5s forwards;
     }
@@ -545,31 +565,145 @@ body {
     .about-text{
         font-size: 1.1rem;       /* Set a responsive font size */
         color: white;
+        flex: 1;
         font-family: "Preahvihear", sans-serif;
-        margin: 20px auto;       /* Add vertical margin and center horizontally */
-        max-width: 90%;          /* Limit the width to 90% of the screen */
+        padding: 20px;
         line-height: 1.5;        /* Improve readability with increased line height */
-        text-align: center;      /* Center the text */
         word-wrap: break-word;   /* Ensure long words wrap to the next line */
     }
 
     .about-text-right{
-        margin: -38% 0 0 65%;
         opacity: 0;
         animation: fadeIn 1.5s ease-in-out 4.5s forwards;
     }
 
     .about-text-left{
-        margin: -35.5% 65% 0 0;
         opacity: 0;
         animation: fadeIn 1.5s ease-in-out 3s forwards;
     }
-
 
     .about-contact{
         margin: -2% auto;
     }
 
+/* ABOUT PAGE END */
+
+/* PROJECT PAGE START */
+    .projects-title {
+        font-size: 1.5vw;          /* Responsive font size based on viewport width */
+        color: white;
+        font-weight: bold;
+        font-family: "Preahvihear", sans-serif;
+        white-space: normal;     /* Allow text wrapping */
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding-top: 10px;
+        animation: slideInRight 1.5s ease-in-out forwards;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Individual project card */
+    .project-card {
+        background: transparent;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Card background and image wrapper */
+    .card-image-wrapper {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .project-background {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .project-image {
+        width: 100%; /* Ensures the image fills the width of the card */
+        height: 100%; /* Ensures the image fills the height of the card */
+        object-fit: contain; /* Scales the image while maintaining its aspect ratio */
+        position: absolute;
+        top: 0; /* Aligns the image to the top */
+        left: 0; /* Aligns the image to the left */
+        z-index: 2; /* Ensures the image is above the background */
+        border-radius: 15px;
+    }
+
+    /* Project title and description */
+    .project-title {
+        color: #ffffff;
+        font-size: 1.5rem;
+        margin: 15px 0 5px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .project-description {
+        color: #dcdcdc;
+        font-size: 1rem;
+        padding: 10px 15px;
+        font-family: "Poppins", sans-serif;
+    }
+/* PROJECT PAGE END */
+
+/* WORK EXPERIENCE START */
+    .resume{
+        font-size: 1.5vw;          /* Responsive font size based on viewport width */
+        color: white;
+        font-weight: bold;
+        font-family: "Preahvihear", sans-serif;
+        white-space: normal;     /* Allow text wrapping */
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding-top: 10px;
+        animation: slideInRight 1.5s ease-in-out forwards;
+    }
+    .pdf-viewer {
+        margin: 20px auto -5% auto;
+        max-width: 1000px;
+        height: auto; /* Set a fixed height for the viewer */
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+    }
+
+    .pdf-toolbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+    }
 
 /* Adjust for Ultra-Wide Screens*/
     @media (min-aspect-ratio: 24/10), (min-width: 2560px) {
@@ -621,6 +755,113 @@ body {
     }
 }
 
+@media (max-width: 1600px) {
+    .arrow-text-container{
+        margin-left: 20px;
+    }
+
+    .about-text{
+        font-size: 1.7rem;
+    }
+
+
+    .contact-text{
+        font-size: 1.1rem;
+    }
+
+    .contact{
+        font-size: 1.6rem;
+    }
+
+    .projects-title{
+        font-size: 1.7rem;
+    }
+
+    .resume{
+        font-size: 1.7rem;
+    }
+
+}
+
+@media (max-width: 1440px) {
+    .gradient-image{
+        width: 100%;
+    }
+    .profile-image{
+        width: 100%;
+    }
+    .coffee-image{
+        width: 225px;
+    }
+    .intro-text-container{
+        margin-top: -1%;
+        margin-left: 0;
+    }
+    .arrow-text-container{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .about-text{
+        font-size: 0.9rem;
+    }
+
+    .header-title{
+        margin-left: -10%;
+    }
+
+}
+
+@media (max-width: 1280px) {
+    .card-background{
+        width: 690px;
+    }
+    .pet-game-image{
+        width: 650px;
+        margin-left: 4%;
+    }
+    .card-image{
+        margin-left: -37%;
+    }
+    .pet-game-text{
+        margin-left: -1%;
+    }
+}
+
+@media (max-width: 1152px) {
+    .gradient-image{
+        width: 90%;
+    }
+    .profile-image{
+        width: 90%;
+    }
+    .coffee-image{
+        width: 200px;
+    }
+    .intro-text-container{
+        margin-top: -1%;
+        margin-left: 0;
+    }
+    .arrow-text-container{
+        margin-left: 60px;
+    }
+
+    .card-background{
+        width: 620px;
+    }
+    .pet-game-image{
+        width: 580px;
+        margin-left: 5%;
+    }
+    .card-image{
+        margin-left: -39%;
+    }
+    .pet-game-text{
+        margin-left: -4%;
+        font-size: 1.13rem;
+    }
+}
 
 @media (max-width: 1024px) {
     header h1 {
@@ -630,8 +871,201 @@ body {
     .header-underline {
         left: 92%; /* Move underline closer to the left */
     }
+
+    .about-me{
+        font-size: 1.3rem;
+    }
+
+    .about-content{
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        align-items: center;
+    }
+
+    .image-stack{
+        height: 550px;
+        width: 500px;
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out 3.5s forwards;
+    }
+
+    .about-text-left{
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out 1.5s forwards;
+    }
+
+    .about-text-right{
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out 4.5s forwards;
+    }
+
+    .jay-picture{
+        height: 550px;
+        width: auto;
+    }
+
+    .gradient-image{
+        width: 65%;
+    }
+    .profile-image{
+        width: 65%;
+    }
+    .coffee-image{
+        width: 140px;
+    }
+    .intro-text-container{
+        margin-top: -3%;
+        margin-left: 0;
+    }
+    .arrow-text-container{
+        margin-left: 80px;
+    }
+    .arrow-image{
+        width: 140px;
+        height: auto;
+    }
+
+    .card-background{
+        width: 555px;
+    }
+    .pet-game-image{
+        width: 510px;
+        margin-left: 8%;
+    }
+    .card-image{
+        margin-left: -39%;
+        width: 560px;        /* Set appropriate width */
+        height: 200px;       /* Maintain aspect ratio */
+    }
+
+    .pet-game-text{
+        margin-left: -4%;
+        font-size: 1.05rem;
+    }
+
+    .contact-text {
+        font-size: 0.9rem;
+    }
 }
 
+@media (max-width: 800px) {
+    .top-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .gradient-image{
+        width: 90%;
+    }
+    .profile-image{
+        width: 90%;
+    }
+    .coffee-image{
+        width: 200px;
+        margin-bottom: 10%;
+    }
+    .image-container{
+        margin-left: -45%;
+    }
+    .intro-text-container{
+        margin-top: -23%;
+        margin-left: 0;
+    }
+    .arrow-text-container{
+        margin-left: 100px;
+        margin-top: -5%;
+    }
+    .arrow-image{
+        width: 140px;
+        height: auto;
+
+    }
+
+    .intro-text{
+        font-size: 3.5vw;
+    }
+    .highlight-text{
+        font-size: 3.5vw;
+    }
+    .intro-text2,
+    .intro-text3 {
+        font-size: 3.5vw;          /* Responsive font size based on viewport width */
+    }
+
+
+    .featured-project-wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .featured-project-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card-background{
+        width: 555px;
+        margin: 10% 0 0 -75%;
+
+    }
+
+    .pet-game-image{
+        width: 510px;
+        transform: translate(-1.5%, -112.5%);
+        margin-bottom: -30%;
+    }
+    .card-image{
+        display: none;
+    }
+
+    .pet-game-text{
+        margin: 15% 0 0 75%;
+        font-size: 1.05rem;
+    }
+
+
+    .featured-project-text{
+        margin: -15% 0;
+        font-size: 1.5rem;
+    }
+    .project-name-text{
+        margin: 15% 0 -5% 0;
+    }
+
+
+    .featured-project-container.second{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .card-background.second{
+        margin: 0 0 0 100%;
+    }
+    .weather-app-image{
+        transform: translate(0, -105%);
+    }
+    .card-image.second{
+        display: none;
+    }
+    .weather-app-text{
+        margin: -80% 0 -50% -80%;
+    }
+
+    .featured-project-text.second{
+        margin: -50% 0 -20%;
+        font-size: 1.5rem;
+    }
+    .project-name-text.second{
+        margin: 20% 0 0;
+    }
+
+    .contact-text{
+        font-size: 1.5vw;
+    }
+
+    .card-background.third{
+        margin: 0;
+    }
+}
 
 @media (max-width: 768px) {
     .header-title{
@@ -682,13 +1116,137 @@ body {
     }
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        padding-left: 20px; /* Minimal padding for mobile devices */
+@media (max-width: 600px) {
+    .card-background{
+        margin-left: -81%;
+    }
+    .pet-game-image{
+        transform: translate(-4.5%, -112.5%);
     }
 
-    .header-underline {
-        left: 68%; /* Move underline significantly left for small screens */
+}
+
+@media (max-width: 480px) {
+
+
+    .header-title{
+        margin-left: 5px;
+    }
+
+    .image-stack{
+        height: 450px;
+        width: 370px;
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out 3.5s forwards;
+    }
+
+    .jay-picture{
+        height: 450px;
+        width: auto;
+    }
+
+    .card-background.third{
+        height: 500px;
+    }
+
+    .gradient-image{
+        width: 70%;
+    }
+    .profile-image{
+        width: 70%;
+    }
+
+    .arrow-text-container{
+        margin-left: 50px;
+        margin-top: -18%;
+    }
+
+    .intro-text-container{
+        margin-top: -40%;
+    }
+    .coffee-image{
+        width: 150px;
+    }
+
+    .card-background{
+        width: 450px;
+        margin: 5% 0 0 -85%;
+    }
+    .pet-game-image{
+        width: 425px;
+        transform: translate(-6.5%, -112.5%);
+    }
+    .pet-game-text{
+        margin: 65% 0 -40% 70%;
+    }
+
+
+    .card-background.second{
+        width: 425px;        /* Set appropriate width */
+        height: 600px;       /* Maintain aspect ratio */
+        margin: 0 0 0 95%;
+    }
+    .weather-app-image{
+        width: 400px;        /* Set appropriate width */
+        height: auto;
+        transform: translate(-3%, -106%);
+    }
+    .weather-app-text{
+        margin: -70% 0 -60% -95%;
+    }
+
+    .contact-text {
+        font-size: 0.45rem;
+    }
+}
+@media (max-width: 414px) {
+    .gradient-image{
+        width: 60%;
+    }
+    .profile-image{
+        width: 60%;
+    }
+    .image-container{
+        margin-left: -60%;
+    }
+    .arrow-text-container{
+        margin-left: 6%;
+        margin-top: -20%;
+    }
+    .arrow-image{
+        width: 100px;
+    }
+    .coffee-image{
+        width: 125px;
+    }
+
+    .card-background{
+        width: 380px;
+    }
+    .pet-game-image{
+        width: 355px;
+        transform: translate(-6.5%, -115.5%);
+    }
+    .pet-game-text{
+        margin: 85% 0 -65% 75%;
+    }
+
+    .card-background.second{
+        width: 375px;        /* Set appropriate width */
+        height: 560px;       /* Maintain aspect ratio */
+        margin: 0 0 0 95%;
+    }
+    .weather-app-image{
+        width: 350px;        /* Set appropriate width */
+        height: auto;
+        transform: translate(-2.5%, -110%);
+    }
+    .weather-app-text{
+        font-size: 1.0rem;
+    }
+
+    .contact-text {
+        font-size: 0.35rem;
     }
 }
 
