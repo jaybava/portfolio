@@ -1,6 +1,7 @@
 import React,  { useEffect, useState, useRef } from 'react';
 import Header from '../components/Header';
-import Contact from "../components/Contact"; // Ensure the CSS file is correctly imported
+import Contact from "../components/Contact";
+import {Link} from "react-router-dom"; // Ensure the CSS file is correctly imported
 
 const Home = () => {
     const [skillsVisible, setSkillsVisible] = useState(false);
@@ -110,7 +111,9 @@ const Home = () => {
                         <p className="featured-project-text">Featured Project</p>
                         <p className="project-name-text">Pet Game</p>
                         <img src="images/Card%20Background.png" alt="Card Background" className="card-background"/>
-                        <img src="images/PetGame.png" alt="Pet Game" className="pet-game-image"/>
+                        <Link to="/projects">
+                            <img src="images/PetGame.png" alt="Pet Game" className="pet-game-image"/>
+                        </Link>
                         <img src="images/CardLeft.png" alt="Card" className="card-image"/>
                         <p className="pet-game-text">An engaging virtual pet game for kids that combines <br/>
                             fun and learning. Care for your pet by feeding, grooming, <br/>
@@ -126,7 +129,9 @@ const Home = () => {
                         <p className="featured-project-text second">Featured Project</p>
                         <p className="project-name-text second">Weather App</p>
                         <img src="images/Card%20Background.png" alt="Card Background" className="card-background second"/>
+                        <Link to="/projects">
                         <img src="images/WeatherApp.png" alt="Weather App" className="weather-app-image"/>
+                        </Link>
                         <img src="images/CardRight.png" alt="Card" className="card-image second"/>
                         <p className="weather-app-text">A Java-based desktop application for visualizing <br/>
                             real-time weather data. Search by city, state, or <br/>
@@ -141,7 +146,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <Contact/>
+            <Contact/>
             </div>
         </div>
     );

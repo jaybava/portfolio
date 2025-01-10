@@ -161,7 +161,7 @@ body {
         font-weight: bold;
         font-family: "Preahvihear", sans-serif;
         white-space: nowrap;
-        margin-bottom: 2px;
+        margin: 0;
     }
 
     .contact-text{
@@ -182,8 +182,8 @@ body {
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
-    overflow: visible;
-    padding-bottom: 0;
+    overflow: hidden;
+    padding-bottom: 15%;
 }
 
 /* Top Section of Home Page Start */
@@ -607,7 +607,7 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
         gap: 20px;
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 0 20% -5%;
         padding: 20px;
     }
 
@@ -669,6 +669,11 @@ body {
         font-size: 1rem;
         padding: 10px 15px;
         font-family: "Poppins", sans-serif;
+    }
+
+    .project-link {
+        text-decoration: none; /* Remove underline */
+        color: inherit; /* Use the same color as the card's text */
     }
 /* PROJECT PAGE END */
 
