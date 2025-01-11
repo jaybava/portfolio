@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <header
             style={{
-                backgroundImage: `url(portfolio/images/Header.png)`,
+                backgroundImage: `url(${process.env.PUBLIC_URL}/images/Header.png)`,
                 padding: "20px",
                 display: "flex",
         }}
