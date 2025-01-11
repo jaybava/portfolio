@@ -39,13 +39,13 @@ const Contact = () => {
             {/* Contact Images */}
             <div className="contact-links">
                 <a href="https://www.instagram.com/_.jay_.21" target="_blank" rel="noopener noreferrer">
-                    <img src="/portfolio/images/Instagram.png" alt="Instagram" className="instagram-image" />
+                    <img src="/images/Instagram.png" alt="Instagram" className="instagram-image" />
                 </a>
                 <a href="https://www.linkedin.com/in/jay-bava" target="_blank" rel="noopener noreferrer">
-                    <img src="/portfolio/images/Linkdin.png" alt="LinkedIn" className="linkedin-image" />
+                    <img src="/images/Linkdin.png" alt="LinkedIn" className="linkedin-image" />
                 </a>
                 <a href="https://github.com/jaybava" target="_blank" rel="noopener noreferrer">
-                    <img src="/portfolio/images/Github.png" alt="GitHub" className="github-image" />
+                    <img src="/images/Github.png" alt="GitHub" className="github-image" />
                 </a>
             </div>
         </div>
