@@ -18,7 +18,7 @@ const Header = () => {
         >
             <div className="header-title">
                 <h1 className="plus-jakarta-sans-bold">JB</h1>
-                <img src="${process.env.PUBLIC_URL}/images/HeaderUnderline.png" alt="Header Underline" className="header-underline" />
+                <img src='${process.env.PUBLIC_URL}/images/HeaderUnderline.png' alt="Header Underline" className="header-underline" />
             </div>
             <div className="menu-icon" onClick={toggleMenu}>
                 <img src="${process.env.PUBLIC_URL}/images/menuIcon.png" alt="Menu" />

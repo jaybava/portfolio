@@ -62,8 +62,8 @@ const Home = () => {
             >
                 <div className={"top-section"}>
                     <div className="image-container">
-                        <img src="${process.env.PUBLIC_URL}/images/Gradient.png" alt="Gradient" className="gradient-image"/>
-                        <img src="${process.env.PUBLIC_URL}/images/Me.png" alt="Profile" className="profile-image"/>
+                        <img src='${process.env.PUBLIC_URL}/images/Gradient.png' alt="Gradient" className="gradient-image"/>
+                        <img src='${process.env.PUBLIC_URL}/images/Me.png' alt="Profile" className="profile-image"/>
                     </div>
 
                     <div className="arrow-text-container">
