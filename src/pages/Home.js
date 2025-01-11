@@ -112,7 +112,7 @@ const Home = () => {
                          ref={petGameRef}>
                         <p className="featured-project-text">Featured Project</p>
                         <p className="project-name-text">Pet Game</p>
-                        <img src="$/portfolio/images/Card%20Background.png" alt="Card Background" className="card-background"/>
+                        <img src="/portfolio/images/Card%20Background.png" alt="Card Background" className="card-background"/>
                         <Link to="/projects">
                             <img src="/portfolio/images/PetGame.png" alt="Pet Game" className="pet-game-image"/>
                         </Link>
