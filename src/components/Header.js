@@ -11,17 +11,17 @@ const Header = () => {
     return (
         <header
             style={{
-                backgroundImage: `url(/portfolio/images/Header.png)`,
+                backgroundImage: `url(/images/Header.png)`,
                 padding: "20px",
                 display: "flex",
         }}
         >
             <div className="header-title">
                 <h1 className="plus-jakarta-sans-bold">JB</h1>
-                <img src="/portfolio/images/HeaderUnderline.png" alt="Header Underline" className="header-underline" />
+                <img src="/images/HeaderUnderline.png" alt="Header Underline" className="header-underline" />
             </div>
             <div className="menu-icon" onClick={toggleMenu}>
-                <img src="/portfolio/images/menuIcon.png" alt="Menu" />
+                <img src="/images/menuIcon.png" alt="Menu" />
             </div>
             <nav className={`plus-jakarta-sans-bold ${isOpen ? 'nav-open' : ''}`}>
                 <ul className="nav-links">
