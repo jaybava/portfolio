@@ -57,17 +57,17 @@ const Home = () => {
             <div
                 className="background-section"
                 style={{
-                    backgroundImage: "url('${process.env.PUBLIC_URL}/images/Background.png')",
+                    backgroundImage: "url('/portfolio/images/Background.png')",
                 }}
             >
                 <div className={"top-section"}>
                     <div className="image-container">
-                        <img src='${process.env.PUBLIC_URL}/images/Gradient.png' alt="Gradient" className="gradient-image"/>
-                        <img src='${process.env.PUBLIC_URL}/images/Me.png' alt="Profile" className="profile-image"/>
+                        <img src='/portfolio/images/Gradient.png' alt="Gradient" className="gradient-image"/>
+                        <img src='/portfolio/images/Me.png' alt="Profile" className="profile-image"/>
                     </div>
 
                     <div className="arrow-text-container">
-                        <img src="${process.env.PUBLIC_URL}/images/Arrow.png" alt="Arrow" className="arrow-image"/>
+                        <img src="/portfolio/images/Arrow.png" alt="Arrow" className="arrow-image"/>
                         <p className="intro-text">Hello! I Am <span className="highlight-text">Jay Bava</span></p>
                     </div>
 
@@ -78,7 +78,7 @@ const Home = () => {
                             and the&nbsp;
                             <span className="highlight-text-container">
                             <span className="highlight-text2"> coffee</span>
-                            <img src="${process.env.PUBLIC_URL}/images/Ellipse5.png" alt="Ellipse" className="ellipse-image"/>
+                            <img src="/portfolio/images/Ellipse5.png" alt="Ellipse" className="ellipse-image"/>
                         </span>
                             <br/>
                             machine
@@ -86,7 +86,7 @@ const Home = () => {
                     </div>
 
                     <div className={"coffee-machine-container"}>
-                        <img src="${process.env.PUBLIC_URL}/images/CoffeeMachine.png" alt="Coffee Machine" className="coffee-image"/>
+                        <img src="/portfolio/images/CoffeeMachine.png" alt="Coffee Machine" className="coffee-image"/>
                     </div>
                 </div>
 
@@ -101,7 +101,7 @@ const Home = () => {
                 </p>
 
                 <img
-                    src="${process.env.PUBLIC_URL}/images/Skills.png"
+                    src="$/portfolio/images/Skills.png"
                     alt="Skills"
                     className={`skills-image ${skillsVisible ? "visible" : ""}`}
                     ref={skillsImageRef}
@@ -112,11 +112,11 @@ const Home = () => {
                          ref={petGameRef}>
                         <p className="featured-project-text">Featured Project</p>
                         <p className="project-name-text">Pet Game</p>
-                        <img src="${process.env.PUBLIC_URL}/images/Card%20Background.png" alt="Card Background" className="card-background"/>
+                        <img src="$/portfolio/images/Card%20Background.png" alt="Card Background" className="card-background"/>
                         <Link to="/projects">
-                            <img src="${process.env.PUBLIC_URL}/images/PetGame.png" alt="Pet Game" className="pet-game-image"/>
+                            <img src="/portfolio/images/PetGame.png" alt="Pet Game" className="pet-game-image"/>
                         </Link>
-                        <img src="${process.env.PUBLIC_URL}/images/CardLeft.png" alt="Card" className="card-image"/>
+                        <img src="/portfolio/images/CardLeft.png" alt="Card" className="card-image"/>
                         <p className="pet-game-text">An engaging virtual pet game for kids that combines <br/>
                             fun and learning. Care for your pet by feeding, grooming, <br/>
                             and exercising them while playing educational <br/>
@@ -130,11 +130,11 @@ const Home = () => {
                          ref={weatherAppRef}>
                         <p className="featured-project-text second">Featured Project</p>
                         <p className="project-name-text second">Weather App</p>
-                        <img src="${process.env.PUBLIC_URL}/images/Card%20Background.png" alt="Card Background" className="card-background second"/>
+                        <img src="/portfolio/images/Card%20Background.png" alt="Card Background" className="card-background second"/>
                         <Link to="/projects">
-                        <img src="${process.env.PUBLIC_URL}/images/WeatherApp.png" alt="Weather App" className="weather-app-image"/>
+                        <img src="/portfolio/images/WeatherApp.png" alt="Weather App" className="weather-app-image"/>
                         </Link>
-                        <img src="${process.env.PUBLIC_URL}/images/CardRight.png" alt="Card" className="card-image second"/>
+                        <img src="/portfolio/images/CardRight.png" alt="Card" className="card-image second"/>
                         <p className="weather-app-text">A Java-based desktop application for visualizing <br/>
                             real-time weather data. Search by city, state, or <br/>
                             country to view detailed weather conditions, <br/>
