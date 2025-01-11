@@ -1,7 +1,9 @@
 import React,  { useEffect, useState, useRef } from 'react';
 import Header from '../components/Header';
 import Contact from "../components/Contact";
-import {Link} from "react-router-dom"; // Ensure the CSS file is correctly imported
+import {Link} from "react-router-dom";
+import '../style.css'; // Ensure the correct path to your CSS file
+
 
 const Home = () => {
     const [skillsVisible, setSkillsVisible] = useState(false);
