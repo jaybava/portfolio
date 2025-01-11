@@ -29,7 +29,7 @@ const WorkExperience = () => {
         <div
             className={"background-section"}
             style={{
-                backgroundImage: "url('/images/Background.png')",
+                backgroundImage: "url('/portfolio/images/Background.png')",
             }}>
             <p className={"resume"}>Resume</p>
 
@@ -43,7 +43,7 @@ const WorkExperience = () => {
 
                         {/* PDF Viewer with Zoom */}
                         <Viewer
-                            fileUrl={"/pdf/resume.pdf"}
+                            fileUrl={"/portfolio/pdf/resume.pdf"}
                             plugins={[toolbar]} // Use the zoom and toolbar plugins
                         />
                     </div>
