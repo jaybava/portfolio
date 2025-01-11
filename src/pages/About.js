@@ -10,7 +10,7 @@ const About = () => {
         <div
             className={"background-section"}
             style={{
-                backgroundImage: "url('/images/Background.png')",
+                backgroundImage: "url('/portfolio/images/Background.png')",
             }}>
             <p className={"about-me"}>About Me</p>
 

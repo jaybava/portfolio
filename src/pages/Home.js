@@ -101,7 +101,7 @@ const Home = () => {
                 </p>
 
                 <img
-                    src="$/portfolio/images/Skills.png"
+                    src="/portfolio/images/Skills.png"
                     alt="Skills"
                     className={`skills-image ${skillsVisible ? "visible" : ""}`}
                     ref={skillsImageRef}
