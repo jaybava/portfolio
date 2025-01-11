@@ -1182,7 +1182,7 @@ body {
     }
     .pet-game-image{
         width: 425px;
-        transform: translate(-5.5%, -112.5%);
+        transform: translate(-10.5%, -112.5%);
     }
     .pet-game-text{
         margin: 65% 0 -40% 70%;
