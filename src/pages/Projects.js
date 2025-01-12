@@ -9,7 +9,7 @@ const Projects = () => {
             title: "Pet Game",
             description: "An engaging virtual pet game combining fun and learning. Features include feeding, exercising, and educational mini-games.",
             image: "/images/PetGame.png",
-            githubLink: "https://github.com/yourusername/pet-game",
+            githubLink: "https://github.com/jaybava/PetGame",
         },
         {
             title: "Weather App",
