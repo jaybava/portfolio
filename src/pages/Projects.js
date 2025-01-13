@@ -35,6 +35,12 @@ const Projects = () => {
             image: "/images/HashTableC.png",
             githubLink: "https://github.com/jaybava/HashTableC",
         },
+        {
+            title: "Portfolio Website",
+            description: "The current portfolio website your on! Click me to view the source code!",
+            image: "/images/Portfolio.png",
+            githubLink: "https://github.com/jaybava/portfolio",
+        },
 
 
         // Add more projects as needed
