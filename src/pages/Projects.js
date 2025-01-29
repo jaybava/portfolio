@@ -36,6 +36,12 @@ const Projects = () => {
             githubLink: "https://github.com/jaybava/HashTableC",
         },
         {
+            title: "MineSweeper",
+            description: "A Qt-based Minesweeper clone featuring three difficulty levels with varying lives, combining classic gameplay with modern features and a sleek interface.",
+            image: "/images/Minesweeper.png",
+            githubLink: "https://github.com/jaybava/portfolio",
+        },
+        {
             title: "Portfolio Website",
             description: "The current portfolio website your on! Click me to view the source code!",
             image: "/images/Portfolio.png",
