@@ -43,7 +43,7 @@ const Projects = () => {
         },
         {
             title: "Portfolio Website",
-            description: "The current portfolio website your on! Click me to view the source code!",
+            description: "The current portfolio website your on! Crafted with React.js and CSS. Deployed using GitHub Pages and NameCheap for the domain",
             image: "/images/Portfolio.png",
             githubLink: "https://github.com/jaybava/portfolio",
         },
