@@ -60,7 +60,7 @@ const About = () => {
 
                 <div className={"image-stack"}>
                     <img src="images/Card%20Background.png" alt="Card Background" className="card-background third"/>
-                    <img src="images/PictureJay.jpg" alt="Me" className="jay-picture"/>
+                    <img src="images/PictureJay.jpeg" alt="Me" className="jay-picture"/>
                 </div>
 
                 <div className="about-text-right">
