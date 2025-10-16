@@ -6,6 +6,12 @@ import Contact from "../components/Contact";
 const Projects = () => {
     const projects = [
         {
+            title: "Smart Mirror",
+            description: "A Qt/C++ smart‑mirror application delivering a personalized full‑screen dashboard with time/date, news, weather, Google Calendar sync, budgeting, habits, a planner/productivity map, and user accounts.",
+            image: "/images/Portfolio.png",
+            githubLink: "https://github.com/jaybava/SmartMirror",
+        },
+        {
             title: "Pet Game",
             description: "An engaging virtual pet game combining fun and learning. Features include feeding, exercising, and educational mini-games.",
             image: "/images/PetGame.png",
